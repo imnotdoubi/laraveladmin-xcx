@@ -13,3 +13,7 @@ $git clone https://github.com/imnotdoubi/laraveladmin-xcx
 如果你不想配置，可以将小程序里面的获取数据链接改为自己的<br>
 
 
+#后台部分截图
+![laravel-admin](https://github.com/imnotdoubi/laraveladmin-xcx/blob/master/vimg/1.jpg)
+![laravel-admin](https://github.com/imnotdoubi/laraveladmin-xcx/blob/master/vimg/2.jpg)
+![laravel-admin](https://github.com/imnotdoubi/laraveladmin-xcx/blob/master/vimg/3.jpg)
