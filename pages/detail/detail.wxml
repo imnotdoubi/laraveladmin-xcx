@@ -1,0 +1,26 @@
+<import src="../common/head.wxml" />
+<import src="../common/footer.wxml" />
+<import src="../common/liuyan.wxml" />
+
+<view class="viewport">
+
+<template is="head" />
+  <view class="xm_wz" >
+  
+      <text class="titlenr">{{article.title}}</text>
+          <view class="news_cn_time">更新时间：{{article.created_at}} 阅读：{{article.hits}}次</view>
+          
+          
+        <view class="content">
+          <import src="../components/wxParse/wxParse.wxml"/>
+          <template is="wxParse" data="{{wxParseData:article_content.nodes}}"/>
+      </view>
+  </view>
+
+   <text class="info" wx:if="{{info}}">{{info}}</text>
+
+
+<template is="liuyan" />
+
+<template is="foot" />
+</view>

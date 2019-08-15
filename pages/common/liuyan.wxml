@@ -1,0 +1,30 @@
+<template name="liuyan">
+<view class="liuyan">
+	<view class="liuyan_bt" id="liuyan">我要留言<i>(让总部第一时间联系我)</i></view>
+
+
+    <form bindsubmit="formSubmit" bindreset="formReset">
+        <ul>
+            <li>
+                <view> <input name='xingming' auto-focus placeholder="如：张三"  value="逗逼" /></view>
+                
+            </li>
+            <li>
+
+                <view><input name="dianhua" auto-focus  placeholder="如：158 1111 1111"  value="13466668888" /></view>
+            </li>
+            <li >
+            	
+            <view> <textarea bindblur="bindTextAreaBlur" name ="neirong" auto-height placeholder="留言内容"  style="height: 40px" value="测试内容"/></view>
+            </li>
+
+             <input name="wangzhi" value="www.lar-admin.test" style="display:none;" /> 
+            
+        </ul>
+        <view class="btns clearfix">             
+            <button  type="primary" formType="submit"> 留言提交 </button>
+
+        </view>                
+        </form>
+</view>
+</template>

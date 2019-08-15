@@ -1,0 +1,94 @@
+<import src="../common/footer.wxml" />
+
+<view class="viewport">
+  <view class="logo">
+    <image src="http://www.lar-admin.test/web/m/images/logo.jpg"  style="height:50px"  />
+    <navigator url="/search">搜索项目</navigator>
+  </view>
+</view>
+
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}"
+indicator-active-color="{{activeColor}}">
+  <block wx:for="{{imgUrls}}" wx:key="key" wx:for-index="index" wx:for-item="item">
+    <swiper-item>
+      <navigator url="{{item.link}}" >
+      <image src="{{item.url}}" class="scroll_wrap" />
+      </navigator>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="nav">
+	<ul class="clearfix">
+	<block wx:for="{{lanmu}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
+  	<li class="nav_{{index+1}}"><navigator url="/{{item.typedir}}"><i></i><strong>{{item.typename}}</strong></navigator></li>
+ </block>
+		<li class="nav_10"><navigator url="/xm"><i></i><strong>更多</strong></navigator></li>
+	</ul>
+</view>
+
+<view  class="in_project">
+	<view class="in_tit"><strong>热门项目</strong><navigator url="/xm">更多</navigator></view>
+	<ul class="clearfix">
+  <block wx:for="{{hotpp}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
+    <li><navigator url="/xm/{{item.id}}"><image src="{{item.thumb}}" /><strong>{{item.combrand}}</strong><i>{{item.size}}</i></navigator></li>
+ </block>
+		</ul>
+</view>
+
+
+<view  class="in_news">
+	<view class="in_tit"><strong>加盟资讯</strong><navigator url="#">更多</navigator></view>
+
+  <view class='in_news_hd'>
+    <ul>
+      <li data-current = "0" bindtap='indexCheck'>加盟指南</li>
+      <li data-current = "1" bindtap='indexCheck'>创业故事</li>
+    </ul>
+  </view>
+
+
+
+    <view class="in_news_bd">
+      <ul class="clearfix" >
+
+        <swiper current="{{currentData}}" class='swiper'  bindchange="indextag">
+          <swiper-item>
+          <block wx:for="{{hotjmzn}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
+          <li class="clearfix" data-id="{{item.id}}" bindtap="postDetail">
+              <view class="text1"><navigator url="/pages/detail/detail?id={{item.id}}"><image src="{{item.conver}}"/></navigator></view>
+              <view class="text">
+                <strong><navigator url="/pages/detail/detail?id={{item.id}}">{{item.title}}</navigator></strong>
+                <text >{{item.description}}</text>
+              </view>
+              <i>{{item.created_at}} =  {{item.hits}} 人阅读</i>
+            </li>
+          </block>
+          </swiper-item> 
+          <swiper-item>
+                  <block wx:for="{{hotcygs}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
+          <li class="clearfix" bindtap="postDetail" wx:if="{{item.id}}" data-id="{{item.id}}">
+              <view class="text1"><navigator url="/pages/detail/detail?id={{item.id}}"><image src="{{item.conver}}"/></navigator></view>
+              <view class="text">
+                <strong><navigator url="/pages/detail/detail?id={{item.id}}">{{item.title}}33</navigator></strong>
+                <text >{{item.description}}</text>
+              </view>
+              <i>{{item.created_at}} =  {{item.hits}} 人阅读</i>
+            </li>
+          </block>
+          </swiper-item>
+
+        </swiper>
+      </ul>
+
+    </view>
+</view>
+
+
+<view class="tishi1">
+	<view class="tishi">
+	<text>内容声明：以上所展示的信息均由我不是逗逼发布，感谢您的参与和支持，喜欢请给个Stars ！</text>
+	</view>
+</view>
+
+<template is="foot" />

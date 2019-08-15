@@ -1,0 +1,59 @@
+/**index.wxss**/
+.viewport{
+  max-width:640px; margin:0 auto; text-align:left; position:relative;
+}
+.clearfix:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+.clearfix {zoom:1;}
+address, caption, cite, code, dfn, em, strong, th, var, optgroup { font-style:normal; font-weight:inherit; }
+b,strong{ font-weight:bold;}
+
+
+
+.logo{ line-height:0; position:relative;}
+.logo navigator{ background:url(http://www.lar-admin.test/web/m/images/in_search.jpg) no-repeat center center; width:30px; height:30px; display:block; position:absolute; right:0; top:5px; text-indent:-9999px;}
+
+.scroll_wrap {position:relative;display:block;width:100%;float:left;margin:0 auto;}
+
+
+.nav{ padding:6px 7px 0 7px;}
+.nav ul li{ width:20%; float:left;box-sizing:border-box;  margin-bottom:6px; text-align:center; padding-top:4px;}
+.nav ul li i{ display:block; width:44px; height:44px; margin:0 auto; background-image:url(http://www.lar-admin.test/web/m/images/nav.jpg); background-repeat:no-repeat; background-size:44px 440px;border-radius:50%;}
+
+.nav .clearfix.nav_1 { background-position:0 0;}
+.nav ul li.nav_2 i{ background-position:0 -44px;}
+.nav ul li.nav_3 i{ background-position:0 -88px;}
+.nav ul li.nav_4 i{ background-position:0 -132px;}
+.nav ul li.nav_5 i{ background-position:0 -176px;}
+.nav ul li.nav_6 i{ background-position:0 -220px;}
+.nav ul li.nav_7 i{ background-position:0 -264px;}
+.nav ul li.nav_8 i{ background-position:0 -308px;}
+.nav ul li.nav_9 i{ background-position:0 -352px;}
+.nav ul li.nav_10 i{ background-position:0 -396px;}
+
+
+
+.tab{float: left; width: 33.3333%;text-align: center;padding: 10rpx 0; }
+.topTabSwiper{border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; zoom: 1;}
+.topTabSwiper:after{content: ""; clear: both;display: block;}
+.tabBorer{border-bottom: 1px solid #f00; color: #f00;}
+.swiper{width: 100%; height: 330px;}
+.swiper_con{text-align: center; width: 100%; height: 100%; padding: 80rpx 0;}
+
+
+.in_project { background-color:#fff; }
+.in_tit{ padding:0 10px; height:40px; line-height:40px;}
+.in_tit strong{ background:url(http://www.lar-admin.test/web/m/images/bt.jpg) no-repeat left center; padding-left:16px; font-size:14px;}
+.in_tit strong i{ font-style:normal; color:#ff5000;}
+.in_tit navigator{ float:right;}
+/* .in_project ul { padding:0 10px;} */
+.in_project ul li{ width:50%; float:left;    text-align:center; box-sizing:border-box; overflow:hidden; padding:0 10px; font-family:"微软雅黑"; padding-bottom:12px;}
+/* .in_project ul li span{ display:block; line-height:0;} */
+.in_project ul li image{ width:100%;}
+.in_project ul li strong{ display:block;  height:20px; overflow:hidden; line-height:20px; padding-top:4px;}
+.in_project ul li i{ font-style:normal; color:#ff5000;line-height:20px;}
+
+
+.in_news{ background-color:#fff; }
+
+.tishi1{ background-color:#fff;padding:10px;}
+.tishi{  padding:10px; line-height:15px; font-size:10px; color:#666; background-color:#fef2f2; border:1px solid #fdbab0;}

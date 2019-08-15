@@ -1,0 +1,33 @@
+<import src="../common/head.wxml" />
+<import src="../common/footer.wxml" />
+<view class="viewport">
+
+<template is="head" />
+<view class="in_news_hd">
+		<ul>
+    <block wx:for="{{lanmu}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
+      <li ><navigator url="/pages/{{item.typedir}}/{{item.typedir}}">{{item.typename}}</navigator></li>
+  </block>
+		</ul>
+	</view>
+
+<view class="in_news_bd">
+		<ul class="clearfix">
+    	<block wx:for="{{listwz}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
+      <li class="clearfix" bindtap="postDetail" wx:if="{{item.id}}" data-id="{{item.id}}">
+				<view class="text1"><navigator ur="/news/{{item.id}}"><image src="{{item.conver}}"/></navigator></view>
+				<view class="text">
+					<strong><navigator url="/news/{{item.id}}">{{item.title}}</navigator></strong>
+					<text>{{item.description}}</text>
+				</view>
+				<i>{{item.created_at}} = {{item.hits}} 人阅读</i>
+			</li>
+ </block>
+  <text class="info" wx:if="{{info}}">{{info}}</text>
+
+		</ul>
+        
+ </view>
+<template is="foot" />
+
+</view>

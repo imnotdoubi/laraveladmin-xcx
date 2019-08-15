@@ -1,0 +1,46 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.header{ height:44px; line-height:44px; background:#ff5000; position:relative;}
+.header strong{ margin:0 44px; display:block; text-align:center; font-size:18px;color:#fff;}
+
+.header .h_search_pic{ position:absolute; right:0; top:0;}
+.header .h_search_pic{ width:44px; height:44px; float:left; text-indent:-9999px;border-left:1px solid rgba(0,0,0,0.2);}
+.header .h_search_pic{ background:url(http://www.lar-admin.test/web/m/images/header_pic.jpg) no-repeat 0 -44px; }
+
+.in_news_hd{ height:30px; line-height:28px; background-color:#f7f7f7; cursor:pointer;}
+.in_news_hd ul li{ float:left; width:20%; text-align:center; border-top:1px solid #f7f7f7; border-bottom:1px solid #f7f7f7;}
+.in_news_hd ul li.current{border-bottom:1px solid #ff5000; color:#ff5000;}
+
+.in_news_bd{ text-align:left;}
+.in_news_bd ul li{ margin:0 5px; padding:14px 0; border-bottom:1px solid #e9e9e9; cursor:pointer;}
+.in_news_bd ul li .text1{ float:left; width:120px; height:90px; overflow:hidden;}
+.in_news_bd ul li image{ width:120px; height:90px;}
+.in_news_bd ul li .text{ margin-left:130px; line-height:24px; height:72px; overflow:hidden;}
+
+
+
+.in_news_bd ul li i{ display:block; margin-left:130px; line-height:18px; font-style:normal; color:#999; height:18px;}
+
+
+.footer{ line-height:26px; padding:14px 0 60px 0;  font-family:"微软雅黑"; color:#333; text-align:center;}
+
+.f_nav{ height:44px; background-color:#fff; position:fixed; left:0; bottom:0; width:100%; line-height:18px; text-align:center; }
+.f_nav ul li{ float:left; width:25%;}
+.f_nav ul li navigatora{ color:#333; display:block; height:40px; padding-top:4px;}
+.f_nav ul li icon{ height:22px; width:24px; display:block; margin:0 auto;}
+.f_nav ul li icon.icon1{ background:url(http://www.lar-admin.test/web/m/images/f_nav.jpg) no-repeat;}
+.f_nav ul li icon.icon2{ background:url(http://www.lar-admin.test/web/m/images/f_nav.jpg) no-repeat 0 -22px;}
+.f_nav ul li icon.icon3{ background:url(http://www.lar-admin.test/web/m/images/f_nav.jpg) no-repeat 0 -44px;}
+.f_nav ul li icon.icon4{ background:url(http://www.lar-admin.test/web/m/images/f_nav.jpg) no-repeat 0 -66px;}
+
+
+
+
