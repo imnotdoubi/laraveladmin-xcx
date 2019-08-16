@@ -1,0 +1,42 @@
+/* pages/projectcon/projectcon.wxss */
+@import "../components/wxParse/wxParse.wxss";
+.pic{ position:relative; }
+.pic image{display:block;margin:0 auto;position:relative;}
+
+.barnd_js{   padding:5px 10px 10px 10px; border-bottom:1px solid #e2e2e2; position:relative;}
+
+.barnd_js .open_ly{ position:absolute; right:10px; top:5px; padding:0 5px; height:26px; line-height:26px; border:2px solid #ff5000; color:#ff5000;border-radius:3px;}
+
+.barnd_js text{ font-size:18px; font-weight:bold; line-height:26px;}
+
+.barnd_js text i{ font-size:18px; font-weight:bold; color:#ff5000; padding-right:5px; font-style:normal;}
+
+.barnd_js1 text{ width:50%; float:left; line-height:26px;box-sizing:border-box; padding:0 10px; border-right:1px solid #e2e2e2; border-bottom:1px solid #e2e2e2; }
+
+.xm_wz text{ font-size:18px; text-align:center; padding-top:10px;}
+
+.content{ margin:0 10px; padding:10px 0; line-height:180%;}
+
+.qiye_tit{ border-bottom:1px solid #e2e2e2; line-height:40px;background:url(http://www.lar-admin.test/web/m/images/bt.png) no-repeat 10px center; padding-left:22px; font-size:14px; font-weight:bold; margin-right:10px;}
+
+
+.info {
+  color: gray;
+  opacity: .8;
+  margin-bottom: 20rpx; 
+}
+
+.liuyan_bt{ background:#f6f6f6 url(http://www.lar-admin.test/web/m/images/bt.jpg) no-repeat 10px center; padding-left:20px; font-weight:bold; font-size:14px; height:40px; line-height:40px;}
+.liuyan_bt i{ font-size:12px; font-weight:100; color:#999; font-style:normal; padding-left:5px;}
+.liuyan ul{ padding-top:10px; margin:0 10px;}
+.liuyan ul li{ height:40px; line-height:32px;}
+.liuyan ul li text{ float:left;}
+
+.liuyan ul li view{ margin-left:50px;}
+.liuyan ul li view.xb{ margin:0; float:left;}
+.liuyan ul li input{ float:left;}
+.liuyan ul li i{ float:left;}
+.liuyan ul li input{ height:30px; line-height:30px; border:1px solid #e2e2e2; width:100%; padding:0 5px;box-sizing:border-box ; font-size:12px;}
+.liuyan ul li textarea{ height:60px; line-height:20px; border:1px solid #e2e2e2; width:100%; padding:0 5px;box-sizing:border-box;font-size:12px;}
+.liuyan .btns{ margin:0 10px 0 10px; margin-top:10px;}
+.liuyan .btns button{ width:100%; height:32px; background:#ff5000; border:none; color:#fff; font-weight:bold; font-size:14px;}

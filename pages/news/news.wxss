@@ -1,0 +1,22 @@
+/* pages/gushi/news.wxss */
+
+
+.info {
+  color: gray;
+  opacity: .8;
+  margin-bottom: 20rpx; 
+}
+
+.info.loading {
+    width: 70rpx;
+    height: 70rpx; 
+}
+
+
+.online-title {
+    height: 0.4rem;
+line-height: 0.4rem;
+text-align: center;
+font-size: 0.13rem;
+overflow: hidden;
+}

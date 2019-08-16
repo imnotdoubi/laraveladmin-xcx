@@ -1,7 +1,7 @@
 # laraveladmin-xcx（如果帮助了你，请给个Star）
-laravel-admin 前端 微信小程序
+laravel-admin 前端 微信小程序（模版样式是随便弄了一个，将就看）
 
-开箱即用，当前已发布小程序首页，文章列表，内容，留言等配置<br>
+开箱即用，当前已发布小程序首页，项目列表，项目内容，文章列表，内容，留言等配置<br>
 
 
 #安装方式
@@ -17,3 +17,5 @@ $git clone https://github.com/imnotdoubi/laraveladmin-xcx
 ![laravel-admin](https://github.com/imnotdoubi/laraveladmin-xcx/blob/master/vimg/1.jpg)
 ![laravel-admin](https://github.com/imnotdoubi/laraveladmin-xcx/blob/master/vimg/2.jpg)
 ![laravel-admin](https://github.com/imnotdoubi/laraveladmin-xcx/blob/master/vimg/3.jpg)
+![laravel-admin](https://github.com/imnotdoubi/laraveladmin-xcx/blob/master/vimg/4.jpg)
+![laravel-admin](https://github.com/imnotdoubi/laraveladmin-xcx/blob/master/vimg/5.jpg)

@@ -6,8 +6,8 @@
   <view class="in_news_hd">
       <ul>
       <block wx:for="{{lanmu}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
-        <li ><navigator url="/pages/{{item.typedir}}/{{item.typedir}}">{{item.typename}}</navigator></li>
-    </block>
+          <view bindtap="clickfl" data-id="{{item.id}}">{{item.typename}}</view>
+      </block>
       </ul>
   </view>
 
@@ -15,10 +15,10 @@
       <ul class="clearfix">
         <block wx:for="{{listwz}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
         <li class="clearfix" bindtap="postDetail" wx:if="{{item.id}}" data-id="{{item.id}}">
-          <view class="text1"><navigator ur="/pages/detail/{{item.id}}"><image src="{{item.conver}}"/></navigator></view>
+          <view class="text1"><image src="{{item.conver}}"/></view>
           <view class="text">
-            <strong><navigator url="/pages/detail/detail?id={{item.id}}">{{item.title}}</navigator></strong>
-            <text>{{item.description}}</text>
+            <strong>{{item.title}}</strong>
+            <text>\n{{item.description}}</text>
           </view>
           <i>{{item.created_at}} = {{item.hits}} 人阅读</i>
         </li>

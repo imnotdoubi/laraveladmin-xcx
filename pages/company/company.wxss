@@ -1,0 +1,97 @@
+@import "../common/weui.wxss";
+
+.banrd_list{ text-align:left;}
+.banrd_list ul li{ margin:0 3px; padding:14px 0; border-bottom:1px solid #e9e9e9; cursor:pointer;}
+.banrd_list ul li .text1{ float:left; width:120px; height:90px; overflow:hidden;}
+.banrd_list ul li image{ width:120px; height:90px;}
+.banrd_list ul li .text{ margin-left:130px; line-height:24px; height:92px; overflow:hidden;}
+
+.banrd_list ul li i{ display:block; margin-left:130px; line-height:18px; font-style:normal; color:#999; height:18px;}
+.banrd_list ul li .text strong{ display:block; height:24px; line-height:24px; overflow:hidden;}
+
+
+.clear{
+  clear: both;
+  overflow: hidden;
+}
+ 
+.tabTit{
+  height:90rpx;
+  line-height: 90rpx;
+  border-bottom: solid 1px #eee;
+  position:fixed;
+  top:0;
+  width: 750rpx;
+  z-index: 1;
+  background: #fff;
+  font-size:15px;
+  text-align: center;
+}
+ 
+ 
+ 
+.tabTit .active{
+  color:#e64340;
+  background: #fff;
+}
+ 
+.tabTit .active image{
+  transform: rotate(180deg);
+  background: none;
+}
+ 
+.tabTit image{
+  width:26rpx;
+  height:26rpx;
+  vertical-align: middle;
+  margin-left: 5px;
+ 
+}
+ 
+.tabLayer{
+  box-shadow: 0 5px 5px rgba(0,0,0,.15);
+  width:750rpx;
+  overflow: hidden;
+  position: fixed;
+  top:90rpx;
+  z-index: 1;
+  background: #fff;
+  padding-bottom: 40rpx;
+  border-bottom: solid 1px #eee;
+  text-align: center;
+}
+.tabLayer text{
+  width:210rpx;
+  height:60rpx;
+  line-height:60rpx;
+  float:left;
+  border: solid 1px #eee;
+  margin:20rpx 0 0 26rpx;
+  font-size:15px;
+}
+.tabLayer .active{
+  color:#e64340;
+  border-color:#e64340;
+  }
+ 
+.flex1 {
+    flex: 1;
+    overflow: hidden;
+    display: block;
+}
+ 
+/*弹性盒模型*/
+.box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+ 
+navigator{
+  display:inline;
+}
+
+
+
+

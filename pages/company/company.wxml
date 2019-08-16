@@ -1,0 +1,42 @@
+<!--pages/company/company.wxml-->
+<import src="../common/head.wxml" />
+<import src="../common/footer.wxml" />
+<view class="viewport">
+
+<template is="head" />
+
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__bd">
+            <picker bindchange="bindChangeLanmu" value="{{tabTxt[index].id}}" range="{{tabTxt}}" range-key="{{'typename'}}">
+              <view class="weui-input">{{tabTxt[index].typename}}</view>
+            </picker>
+          </view>
+
+           <view class="weui-cell__bd">
+            <picker bindchange="bindChangeTouzi" value="{{tabtouzi[index2].id}}" range="{{tabtouzi}}" range-key="{{'title'}}" >
+              <view class="weui-input">{{tabtouzi[index2].title}}</view>
+            </picker>
+          </view>
+        </view>
+     
+
+<view class="banrd_list">
+	<ul>
+    <block wx:for="{{listxm}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
+
+       <li class="clearfix"   bindtap="postProject" wx:if="{{item.id}}" data-id="{{item.id}}">
+          <view class="text1"><image src="{{item.thumb}}"/></view>
+          <view class="text">
+            <strong>{{item.combrand}}</strong>
+            <text>\n投资金额：{{item.size}}</text>
+          </view>
+          
+        </li>
+  </block>
+	</ul>
+   <text class="info" wx:if="{{info}}">{{info}}</text>
+</view>
+
+
+<template is="foot" />
+</view>

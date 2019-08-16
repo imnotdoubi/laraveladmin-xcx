@@ -89,6 +89,13 @@ Page({
       url: '/pages/detail/detail?id=' + event.currentTarget.dataset.id,
     })
   },
+
+  //点击跳转到项目内容
+  postProject: function (event) {
+    wx.navigateTo({
+      url: '/pages/projectcon/projectcon?id=' + event.currentTarget.dataset.id,
+    })
+  },
   //获取当前滑块的index tag 切换
   indextag: function (e) {
     var that = this;

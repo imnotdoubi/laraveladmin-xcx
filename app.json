@@ -1,8 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/gushi/gushi",
-    "pages/jmzn/jmzn",
+    "pages/news/news",
+    "pages/projectcon/projectcon",
+    "pages/company/company",
     "pages/detail/detail",
     "pages/logs/logs"
   ],

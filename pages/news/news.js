@@ -1,6 +1,4 @@
-// pages/kdzn/kdzn.js
-
-
+// pages/news/news.js
 Page({
 
   /**
@@ -10,7 +8,8 @@ Page({
     listwz: [],
     isLoadingMore: false,
     currentPage: 1,
-    info: ''
+    info: '',
+    index:0
   },
 
   /**
@@ -38,34 +37,45 @@ Page({
       wx.showLoading({
         title: '文章加载中...'
       })
-    that.loadArticles()
-
 
   },
-  //点击跳转到文章
-  postDetail: function (event) {
-    wx.navigateTo({
-      url: '/pages/detail/detail?id=' + event.currentTarget.dataset.id,
-    })
+
+  //点击跳转到指定栏目
+  clickfl: function (e) {
+
+    this.data.index = e.currentTarget.dataset.id
+    this.data.currentPage = 1
+
+    this.loadArticles()
+    
+//  
   },
+
+ 
   loadArticles: function () {
     var that = this
+   
     wx.request({
-      url: 'http://www.lar-admin.test/api/jmzn?page=' + that.data.currentPage,
+      url: 'http://www.lar-admin.test/api/news/' + that.data.index +'?page=' + that.data.currentPage,
       success: (res) => {
 
         if (res.data.message === 'success') {
           if (res.data.listwz.length == 0) {
             that.setData({
               isLoadingMore: false,
-              info: '没有更多文章了'
+              info: '没有更多文章'
             });
           }
-
-          that.setData({
-            // listwz: res.data.listwz
-            listwz: that.data.listwz.concat(res.data.listwz)
-          })
+          if (that.data.currentPage == 1){
+            that.setData({
+              listwz: res.data.listwz
+            })
+          }else{
+            that.setData({
+              listwz: that.data.listwz.concat(res.data.listwz)
+            })
+          }
+          
         } else {
           that.setData({
             info: '加载文章列表失败，请重试'
@@ -76,39 +86,30 @@ Page({
     })
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  //点击跳转到文章
+  postDetail: function (event) {
+    wx.navigateTo({
+      url: '/pages/detail/detail?id=' + event.currentTarget.dataset.id,
+    })
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+      this.loadArticles()
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-
+    
   },
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
+  
   onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
+    
   },
 
   /**
@@ -118,7 +119,7 @@ Page({
     var that = this
     that.data.currentPage++
 
-    if (that.data.isLoadingMore && that.data.currentPage > 3) {
+    if (that.data.isLoadingMore && that.data.currentPage > 2) {
       // 最多只能加载3页
       that.setData({
         isLoadingMore: false,

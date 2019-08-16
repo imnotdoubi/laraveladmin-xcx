@@ -1,0 +1,39 @@
+<!--pages/projectcon/projectcon.wxml-->
+<import src="../common/head.wxml" />
+<import src="../common/footer.wxml" />
+<import src="../common/liuyan.wxml" />
+
+<view class="viewport">
+<template is="head" />
+
+<!--焦点图广告 Start-->
+<view class="pic">
+	<view class="scroll relative">
+				<image src="{{xmcom.thumb}}" width="100%" />
+	</view>
+</view>
+
+
+<view class="barnd_js">
+  <text>{{xmcom.combrand}}</text>
+  <text>\n{{xmcom.comname}}</text>
+  <text>\n投资金额：{{xmcom.size}}(不包括房租，装修)</text>
+  <text>\n地区：{{xmcom.province}}</text>
+  <text>\n保证费：{{xmcom.capital}}万</text>
+  <text>\n意向加盟：{{xmcom.hits}}人</text>
+</view>
+
+<view class="xm_wz">
+		<view class="qiye_tit">{{xmcom.combrand}}项目介绍</view>
+		<view class="content">
+		      <import src="../components/wxParse/wxParse.wxml"/>
+          <template is="wxParse" data="{{wxParseData:xmcom_content.nodes}}"/>
+		</view>
+</view>
+
+
+<template is="liuyan" />
+
+<template is="foot" />
+
+</view>

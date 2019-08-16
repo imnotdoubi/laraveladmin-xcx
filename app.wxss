@@ -16,7 +16,7 @@
 .header .h_search_pic{ background:url(http://www.lar-admin.test/web/m/images/header_pic.jpg) no-repeat 0 -44px; }
 
 .in_news_hd{ height:30px; line-height:28px; background-color:#f7f7f7; cursor:pointer;}
-.in_news_hd ul li{ float:left; width:20%; text-align:center; border-top:1px solid #f7f7f7; border-bottom:1px solid #f7f7f7;}
+.in_news_hd ul view{ float:left; width:20%; text-align:center; border-top:1px solid #f7f7f7; border-bottom:1px solid #f7f7f7;}
 .in_news_hd ul li.current{border-bottom:1px solid #ff5000; color:#ff5000;}
 
 .in_news_bd{ text-align:left;}

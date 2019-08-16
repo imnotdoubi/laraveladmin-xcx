@@ -8,8 +8,8 @@
   <view class="f_nav">
     <ul>
       <li><navigator url="/pages/index/index"><icon class="icon1"></icon>首页</navigator></li>
-      <li><navigator url="#"><icon class="icon2"></icon>项目</navigator></li>
-      <li><navigator url="/pages/jmzn/jmzn"><icon class="icon3"></icon>资讯</navigator></li>
+      <li><navigator url="/pages/company/company"><icon class="icon2"></icon>项目</navigator></li>
+      <li><navigator url="/pages/news/news"><icon class="icon3"></icon>资讯</navigator></li>
       <li><navigator url="#"><icon class="icon4"></icon>问答</navigator></li>
     </ul>
   </view>

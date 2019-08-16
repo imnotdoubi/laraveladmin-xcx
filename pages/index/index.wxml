@@ -23,22 +23,23 @@ indicator-active-color="{{activeColor}}">
 	<block wx:for="{{lanmu}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
   	<li class="nav_{{index+1}}"><navigator url="/{{item.typedir}}"><i></i><strong>{{item.typename}}</strong></navigator></li>
  </block>
-		<li class="nav_10"><navigator url="/xm"><i></i><strong>更多</strong></navigator></li>
+		<li class="nav_10"><navigator url="/pages/company/company"><i></i><strong>更多</strong></navigator></li>
 	</ul>
 </view>
 
 <view  class="in_project">
-	<view class="in_tit"><strong>热门项目</strong><navigator url="/xm">更多</navigator></view>
+	<view class="in_tit"><strong>热门项目</strong><navigator url="/pages/company/company">更多</navigator></view>
 	<ul class="clearfix">
   <block wx:for="{{hotpp}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
-    <li><navigator url="/xm/{{item.id}}"><image src="{{item.thumb}}" /><strong>{{item.combrand}}</strong><i>{{item.size}}</i></navigator></li>
+    <li data-id="{{item.id}}" wx:if="{{item.id}}" bindtap="postProject">
+   <image src="{{item.thumb}}" /><strong>{{item.combrand}}</strong><i>{{item.size}}</i></li>
  </block>
 		</ul>
 </view>
 
 
 <view  class="in_news">
-	<view class="in_tit"><strong>加盟资讯</strong><navigator url="#">更多</navigator></view>
+	<view class="in_tit"><strong>加盟资讯</strong><navigator url="/pages/news/news">更多</navigator></view>
 
   <view class='in_news_hd'>
     <ul>
@@ -56,10 +57,10 @@ indicator-active-color="{{activeColor}}">
           <swiper-item>
           <block wx:for="{{hotjmzn}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
           <li class="clearfix" data-id="{{item.id}}" bindtap="postDetail">
-              <view class="text1"><navigator url="/pages/detail/detail?id={{item.id}}"><image src="{{item.conver}}"/></navigator></view>
+              <view class="text1"><image src="{{item.conver}}"/></view>
               <view class="text">
-                <strong><navigator url="/pages/detail/detail?id={{item.id}}">{{item.title}}</navigator></strong>
-                <text >{{item.description}}</text>
+                <strong>{{item.title}}</strong>
+                <text >\n{{item.description}}</text>
               </view>
               <i>{{item.created_at}} =  {{item.hits}} 人阅读</i>
             </li>
@@ -68,9 +69,9 @@ indicator-active-color="{{activeColor}}">
           <swiper-item>
                   <block wx:for="{{hotcygs}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
           <li class="clearfix" bindtap="postDetail" wx:if="{{item.id}}" data-id="{{item.id}}">
-              <view class="text1"><navigator url="/pages/detail/detail?id={{item.id}}"><image src="{{item.conver}}"/></navigator></view>
+              <view class="text1"><image src="{{item.conver}}"/></view>
               <view class="text">
-                <strong><navigator url="/pages/detail/detail?id={{item.id}}">{{item.title}}33</navigator></strong>
+                <strong>{{item.title}}</strong>
                 <text >{{item.description}}</text>
               </view>
               <i>{{item.created_at}} =  {{item.hits}} 人阅读</i>

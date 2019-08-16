@@ -1,17 +1,17 @@
 <template name="liuyan">
 <view class="liuyan">
-	<view class="liuyan_bt" id="liuyan">我要留言<i>(让总部第一时间联系我)</i></view>
+	<view class="liuyan_bt">我要留言</view>
 
 
     <form bindsubmit="formSubmit" bindreset="formReset">
         <ul>
             <li>
-                <view> <input name='xingming' auto-focus placeholder="如：张三"  value="逗逼" /></view>
+                <view> <input name='xingming' placeholder="如：张三"  value="逗逼" /></view>
                 
             </li>
             <li>
 
-                <view><input name="dianhua" auto-focus  placeholder="如：158 1111 1111"  value="13466668888" /></view>
+                <view><input name="dianhua" placeholder="如：158 1111 1111"  value="13466668888" /></view>
             </li>
             <li >
             	
