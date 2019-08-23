@@ -42,29 +42,53 @@ Page({
       path: '/pages/projectcon/projectcon?id=' + id
     }
   },
-
+  //取消返回
+  bindCancel: function () {
+    wx.navigateBack({})
+  },
 
   formSubmit: function (e) {
     //console.log(e.detail.value);
-    if (e.detail.value.xingming.length == 0 || e.detail.value.xingming.length >= 8) {
-      wx.showToast({
-        title: '姓名不能为空或过长!',
-        icon: 'loading',
-        duration: 1000
+    var xingming  = e.detail.value.xingming;
+    var dianhua = e.detail.value.dianhua;
+    var neirong = e.detail.value.neirong;
+
+    if (xingming == "" || xingming.length >= 8) {
+      wx.showModal({
+        title: '提示',
+        content: '姓名不能为空或过长',
+        showCancel: false
       })
-      setTimeout(function () {
-        wx.hideToast()
-      }, 1000)
-    } else if (e.detail.value.dianhua.length == 0 || e.detail.value.dianhua.length >= 12) {
-      wx.showToast({
-        title: '电话不能为空或过长!',
-        icon: 'loading',
-        duration: 1000
+      return
+    }else if (dianhua == "" || dianhua.length >= 12) {
+      wx.showModal({
+        title: '提示',
+        content: '姓名不能为空或过长',
+        showCancel: false
       })
-      setTimeout(function () {
-        wx.hideToast()
-      }, 1000)
-    } else {
+      return
+    }
+
+    // if (dianhua == "" || dianhua >= 12) {
+    //   wx.showToast({
+    //     title: '电话不能为空或过长!',
+    //     icon: 'loading',
+    //     duration: 1000
+    //   })
+    //   setTimeout(function () {
+    //     wx.hideToast()
+    //   }, 1000)
+    // } else if (e.detail.value.dianhua.length == 0 || e.detail.value.dianhua.length >= 12) {
+    //   wx.showToast({
+    //     title: '电话不能为空或过长!',
+    //     icon: 'loading',
+    //     duration: 1000
+    //   })
+    //   setTimeout(function () {
+    //     wx.hideToast()
+    //   }, 1000)
+    // } 
+    else {
       wx.request({
         url: 'http://www.lar-admin.test/api/iphonexx',
         header: {

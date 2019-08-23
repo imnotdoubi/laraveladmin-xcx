@@ -58,7 +58,7 @@ Page({
     wx.request({
       url: 'http://www.lar-admin.test/api/news/' + that.data.index +'?page=' + that.data.currentPage,
       success: (res) => {
-
+        var listwz = []; 
         if (res.data.message === 'success') {
           if (res.data.listwz.length == 0) {
             that.setData({
@@ -66,6 +66,15 @@ Page({
               info: '没有更多文章'
             });
           }
+
+          // for (var i = 0; i < res.data.listwz.length; i++) {
+          //   listwz.push(res.data.listwz[i]);
+          // }
+
+          // that.setData({
+          //   listwz: listwz
+          // });
+
           if (that.data.currentPage == 1){
             that.setData({
               listwz: res.data.listwz

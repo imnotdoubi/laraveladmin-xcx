@@ -1,7 +1,7 @@
 <template name="foot">
   <view class="footer">
 
-我不是逗比（https://github.com/imnotdoubi）版权所有，喜欢请给个Stars
+云海天（https://github.com/imnotdoubi）版权所有，喜欢请给个Stars
   </view>
 
 
@@ -10,7 +10,7 @@
       <li><navigator url="/pages/index/index"><icon class="icon1"></icon>首页</navigator></li>
       <li><navigator url="/pages/company/company"><icon class="icon2"></icon>项目</navigator></li>
       <li><navigator url="/pages/news/news"><icon class="icon3"></icon>资讯</navigator></li>
-      <li><navigator url="#"><icon class="icon4"></icon>问答</navigator></li>
+      <li><navigator url="/pages/ucenter/index/index"><icon class="icon4"></icon>我的</navigator></li>
     </ul>
   </view>
 </template>

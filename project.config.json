@@ -6,8 +6,8 @@
 	"setting": {
 		"urlCheck": false,
 		"es6": true,
-		"postcss": true,
-		"minified": true,
+		"postcss": false,
+		"minified": false,
 		"newFeature": true,
 		"coverView": true,
 		"autoAudits": false,
@@ -22,7 +22,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.8.0",
-	"appid": "wxabcc38ee4a3fc35e",
+	"appid": "wx2db5012af575bf98",
 	"projectname": "test",
 	"debugOptions": {
 		"hidedInDevtools": []

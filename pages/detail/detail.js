@@ -7,7 +7,10 @@ Page({
       article: {},
       info: ''
     },
-
+  //取消返回
+  bindCancel: function () {
+    wx.navigateBack({})
+  },
   onLoad: function (options) {
     var that = this
     wx.request({

@@ -1,7 +1,7 @@
 <template name="head">
 
 <view class="header">
-	<strong>头部</strong>
+	<strong>公共头部</strong>
 	<navigator url="#" class="h_search_pic">搜索</navigator>
 </view>
 </template>

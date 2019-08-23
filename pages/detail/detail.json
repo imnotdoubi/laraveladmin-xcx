@@ -1,4 +1,5 @@
 {
   "component": true,
+  "navigationBarTitleText": "文章详情页面",
   "usingComponents": {}
 }
