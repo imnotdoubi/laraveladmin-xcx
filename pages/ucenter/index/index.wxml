@@ -1,0 +1,26 @@
+<view class="container">
+ <view wx:if="{{token}}">
+
+    <view  class="userinfo">
+      <image src="{{ userInfo.avatarUrl }}" class="userinfo-avatar"/>
+      <view class='userinfo-text'>
+        <text class="userinfo-nickname">{{ userInfo.nickName }}</text>
+      </view>
+    </view>
+</view>
+
+<view wx:else>
+  <view class="zan-btns">
+      <button open-type='getUserInfo' bindgetuserinfo="bindGetUserInfo" class="zan-btn zan-btn--primary">授权登录</button>
+    </view>
+</view>
+
+  
+
+
+
+<view class="zan-btns">
+    <button bindtap='navigateBack' class="zan-btn">返回首页</button>
+  </view>
+
+</view>

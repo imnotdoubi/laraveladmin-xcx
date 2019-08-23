@@ -1,0 +1,74 @@
+page {
+	min-height: 100%;
+}
+.container{
+  min-height: 100%;
+  background-color: #f4f4f4;
+  font-size: 24rpx;
+}
+
+
+ .userinfo {
+	display: flex;
+	flex-direction: column;
+  width: 750rpx;
+  z-index: 100;
+  margin-top: 100rpx;
+	align-items: center;
+  justify-content: center;
+}
+
+ .userinfo .userinfo-avatar {
+  display: block;
+	width: 160rpx;
+	height: 160rpx;
+  margin: 20rpx 0;
+  border: 5rpx solid #eee;
+  border-radius: 50%;
+}
+
+.userinfo .userinfo-avatar-no {
+  display: block;
+	width: 160rpx;
+	height: 160rpx;
+  margin: 20rpx 0;
+  border: 5rpx solid #eee;
+  border-radius: 5%;
+}
+
+ .userinfo .userinfo-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+ .userinfo .userinfo-text .userinfo-nickname {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+
+
+
+
+
+.my-item{
+    width: 30%;
+    background: url(https://cdn.it120.cc/images/weappshop/arrow-right.png) no-repeat 750rpx center;
+    background-size: 16rpx auto,750rpx auto;
+    margin: 20rpx 0; 
+    border-bottom: 1px solid #f4f4f4;
+    height: 80rpx;
+    line-height: 100rpx;
+    padding-left: 100rpx;
+}
+
+.version {
+  width:100%;
+  height: 30rpx;
+	line-height: 30rpx;
+	font-size: 24rpx;
+	text-align: center;  
+}

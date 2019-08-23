@@ -5,6 +5,8 @@
     "pages/projectcon/projectcon",
     "pages/company/company",
     "pages/detail/detail",
+    "pages/ucenter/index/index",
+    "pages/authorize/index",
     "pages/logs/logs"
   ],
   "window": {
